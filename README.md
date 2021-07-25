@@ -1,4 +1,4 @@
 # Parallax carousel
 
 ## Example
-[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+[Project Presentation](resources/example.gif "Example GIF")
