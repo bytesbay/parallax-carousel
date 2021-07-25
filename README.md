@@ -16,7 +16,7 @@ const inst = new ParallaxCarousel({
 ```
 
 ## Options
-```
+```js
 const inst = new ParallaxCarousel({
   el: '#app',
 
