@@ -1,7 +1,9 @@
 {
-  "name": "app",
+  "name": "parallax-carousel",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Parallax carousel is a library that brings a new experience of using carousels just by moving cursor",
+  "author": "bytesbay",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/lib.js",
@@ -39,5 +41,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "main": "dist/app.common.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytesbay/parallax-carousel.git"
+  },
+  "keywords": [
+    "carousel",
+    "parallax",
+    "cursor",
+    "slider"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bytesbay/parallax-carousel/issues"
+  },
+  "homepage": "https://github.com/bytesbay/parallax-carousel#readme"
 }
