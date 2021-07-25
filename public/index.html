@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <style>
+    
+    #app {
+      width: 100%;
+    }
+
+    #app .slider {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #app .item {
+      width: 400px;
+      height: 400px;
+      background-color: #eee;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 10px;
+    }
+
+    </style>
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div class="slider">
+        <div class="item">test</div>
+        <div class="item">test</div>
+        <div class="item">test</div>
+        <div class="item">test</div>
+        <div class="item">test</div>
+        <div class="item">test</div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
