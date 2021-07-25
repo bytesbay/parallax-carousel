@@ -9,14 +9,14 @@ This library brings a new experience of using carousels just by moving cursor
 `npm install parallax-carousel`
 
 ## Example usage
-`
+``
 const inst = new ParallaxCarousel({
   el: '#app',
 });
-`
+``
 
 ## Options
-`
+``
 const inst = new ParallaxCarousel({
   el: '#app',
 
@@ -28,4 +28,4 @@ const inst = new ParallaxCarousel({
     return false;
   },
 });
-`
+``
