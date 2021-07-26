@@ -2,7 +2,7 @@
 
 ![Project Presentation](resources/example.gif "Example GIF")
 
-Parallax carousel is a ease-to-use, high performance carousel that brings a new experience of using carousels just by moving cursor
+Parallax carousel is ease-to-use, high performance carousel (or slider) that brings a new experience of using carousels just by moving cursor
 
 ## Install
 ```bash
