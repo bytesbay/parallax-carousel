@@ -2,7 +2,7 @@
   "name": "parallax-carousel",
   "version": "0.1.0",
   "private": false,
-  "description": "Parallax carousel is a library that brings a new experience of using carousels just by moving cursor",
+  "description": "Parallax carousel is a ease-to-use, high performance carousel that brings a new experience of using carousels just by moving cursor",
   "author": "bytesbay",
   "scripts": {
     "serve": "vue-cli-service serve",
