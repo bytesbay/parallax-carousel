@@ -31,7 +31,7 @@ class ParallaxCarousel {
     this.slider_el.style.height = '100%';
     this.slider_el.style.display = 'inline-block';
 
-    const content = this.el.childNodes[1];
+    const content = this.el.childNodes[0];
 
     this.el.removeChild(content);
     this.slider_el.append(content);
