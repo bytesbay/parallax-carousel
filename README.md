@@ -5,7 +5,9 @@
 Parallax carousel is a ease-to-use, high performance carousel that brings a new experience of using carousels just by moving cursor
 
 ## Install
-`npm install parallax-carousel`
+```bash
+$ npm install parallax-carousel
+```
 
 ## Example usage
 
