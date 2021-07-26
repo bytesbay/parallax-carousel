@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["parallax-carousel"] = factory();
+	else
+		root["parallax-carousel"] = factory();
+})((typeof self !== 'undefined' ? self : this), function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -1052,7 +1061,7 @@ var lib_ParallaxCarousel = /*#__PURE__*/function () {
     this.slider_el.style.minWidth = '100%';
     this.slider_el.style.height = '100%';
     this.slider_el.style.display = 'inline-block';
-    var content = this.el.childNodes[1];
+    var content = this.el.childNodes[0];
     this.el.removeChild(content);
     this.slider_el.append(content);
     this.el.childNodes.forEach(function (n) {
@@ -1208,4 +1217,5 @@ module.exports = NATIVE_SYMBOL
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.common.js.map
+});
+//# sourceMappingURL=parallax-carousel.umd.js.map

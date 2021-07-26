@@ -1,6 +1,6 @@
 {
   "name": "parallax-carousel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "Parallax carousel is a ease-to-use, high performance carousel that brings a new experience of using carousels just by moving cursor",
   "author": "bytesbay",
@@ -42,7 +42,7 @@
     "last 2 versions",
     "not dead"
   ],
-  "main": "dist/app.common.js",
+  "main": "dist/parallax-carousel.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bytesbay/parallax-carousel.git"
