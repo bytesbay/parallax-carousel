@@ -42,3 +42,6 @@ const inst = new ParallaxCarousel({
   },
 });
 ```
+
+## License
+Parallax carousel is released under the MIT license. © 2021 Miroslaw Shpak
