@@ -53,7 +53,7 @@
     "cursor",
     "slider"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bytesbay/parallax-carousel/issues"
   },
