@@ -25,6 +25,8 @@ $ npm install parallax-carousel
 ```
 
 ```js
+import ParallaxCarousel from 'parallax-carousel';
+
 const inst = new ParallaxCarousel({
   el: '#carousel',
 });
