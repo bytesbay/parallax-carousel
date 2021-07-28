@@ -38,7 +38,7 @@ const inst = new ParallaxCarousel({
   el: '#app',
 
   // padding from right side of carousel
-  user_padding: 100,
+  right_padding: 100, // default: 
 
   // custom mobile detection function
   isMobileCustom() {

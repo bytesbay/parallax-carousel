@@ -1050,7 +1050,7 @@ var lib_ParallaxCarousel = /*#__PURE__*/function () {
       this.el = opts.el;
     }
 
-    this.user_padding = typeof opts.user_padding === 'undefined' ? 50 : opts.user_padding;
+    this.right_padding = typeof opts.right_padding === 'undefined' ? 50 : opts.right_padding;
     this.isMobileCustom = opts.isMobile;
     this.wrapper_el = document.createElement('div');
     this.wrapper_el.classList.add('pc-wrapper');
@@ -1061,7 +1061,13 @@ var lib_ParallaxCarousel = /*#__PURE__*/function () {
     this.slider_el.style.minWidth = '100%';
     this.slider_el.style.height = '100%';
     this.slider_el.style.display = 'inline-block';
-    var content = this.el.childNodes[0];
+    var content = null;
+    this.el.childNodes.forEach(function (n) {
+      if (n.nodeName !== '#text') {
+        content = n;
+        return false;
+      }
+    });
     this.el.removeChild(content);
     this.slider_el.append(content);
     this.el.childNodes.forEach(function (n) {
@@ -1109,7 +1115,7 @@ var lib_ParallaxCarousel = /*#__PURE__*/function () {
       var k = map(half + (half - e.clientX), half, width, 0, 1);
       var bb = this.slider_el.getBoundingClientRect();
       var wrapper_bb = this.wrapper_el.getBoundingClientRect();
-      var offset = -(k * (bb.width - (wrapper_bb.width - this.user_padding)));
+      var offset = -(k * (bb.width - (wrapper_bb.width - this.right_padding)));
 
       if (offset < 0) {
         offset = 0;

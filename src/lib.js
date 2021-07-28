@@ -17,7 +17,7 @@ class ParallaxCarousel {
       this.el = opts.el;
     }
 
-    this.user_padding = typeof opts.user_padding === 'undefined' ? 50 : opts.user_padding;
+    this.right_padding = typeof opts.right_padding === 'undefined' ? 50 : opts.right_padding;
     this.isMobileCustom = opts.isMobile;
     
     this.wrapper_el = document.createElement('div')
@@ -31,7 +31,13 @@ class ParallaxCarousel {
     this.slider_el.style.height = '100%';
     this.slider_el.style.display = 'inline-block';
 
-    const content = this.el.childNodes[0];
+    let content = null;
+    this.el.childNodes.forEach(n => {
+      if(n.nodeName !== '#text') {
+        content = n;
+        return false;
+      }
+    })
 
     this.el.removeChild(content);
     this.slider_el.append(content);
@@ -80,7 +86,7 @@ class ParallaxCarousel {
 
     const bb = this.slider_el.getBoundingClientRect()
     const wrapper_bb = this.wrapper_el.getBoundingClientRect()
-    let offset = -(k * (bb.width - (wrapper_bb.width - this.user_padding)));
+    let offset = -(k * (bb.width - (wrapper_bb.width - this.right_padding)));
 
     if(offset < 0) {
       offset = 0
