@@ -38,11 +38,13 @@ const inst = new ParallaxCarousel({
   el: '#app',
 
   // padding from right side of carousel
-  right_padding: 100, // default: 
+  // default: 50
+  right_padding: 100,
 
   // custom mobile detection function
+  // default: 'is-mobile' module https://www.npmjs.com/package/is-mobile
   isMobileCustom() {
-    return false;
+    return false; 
   },
 });
 ```
