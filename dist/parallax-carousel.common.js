@@ -1044,11 +1044,11 @@ var lib_ParallaxCarousel = /*#__PURE__*/function () {
     this.right_padding = typeof opts.right_padding === 'undefined' ? 50 : opts.right_padding;
     this.isMobileCustom = opts.isMobile;
     this.wrapper_el = document.createElement('div');
-    this.wrapper_el.classList.add('pc-wrapper');
+    this.wrapper_el.classList.add('parallax-carousel-wrapper');
     this.wrapper_el.style.width = '100%';
     this.wrapper_el.style.height = '100%';
     this.slider_el = document.createElement('div');
-    this.slider_el.classList.add('pc-slider');
+    this.slider_el.classList.add('parallax-carousel-slider');
     this.slider_el.style.minWidth = '100%';
     this.slider_el.style.height = '100%';
     this.slider_el.style.display = 'inline-block';
